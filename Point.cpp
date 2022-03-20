@@ -18,8 +18,8 @@ void Point::Init(double x, double y)
 }
 double Point:: distance_to_point(const Point point) const
 {
-	return sqrt(
-		std::pow(point.get_x() - x, 2) + std::pow(point.get_y() - y, 2));
+	return 
+		sqrt(pow(point.get_x() - x, 2) + pow(point.get_y() - y, 2));
 }
 void Point::move_x(double x)
 {
@@ -44,4 +44,9 @@ void Point::Display() const
 {
 	cout << " x = " << x << endl;
 	cout << " y = " << y << endl;
+}
+
+double distance_to_point(const Point p1, const Point p2)
+{
+	return sqrt(pow(p1.x - p2.x, 2) + pow(p1.y - p2.y, 2));;
 }

@@ -15,7 +15,8 @@ int main()
 	Point g1=g;
 	g.move_x(-2);
 	g.move_y(5);
-	cout<<"Distance to point  = "<< g.distance_to_point(g1);
+	cout << "Distance to point  = " << g.distance_to_point(g1) <<endl;
+	cout << "Distance to point friend  = " << distance_to_point(g,g1);
 	Point f;
 	f = makePoint(5, 7);
 }

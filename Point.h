@@ -14,6 +14,7 @@ public:
 	void set_x(const double x_);
 	void set_y(const double y_);
 	double distance_to_point(const Point point) const;
+	friend double distance_to_point(const Point p1, const  Point p2);
 	void move_x(double x);
 	void move_y(double y);
 	
